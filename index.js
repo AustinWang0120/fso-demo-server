@@ -18,6 +18,7 @@ const unknownEndpoint = (req, res) => {
 
 app.use(cors())
 app.use(express.json())
+app.use(express.static("build"))
 app.use(requestLogger)
 
 let todos = [
